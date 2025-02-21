@@ -68,7 +68,7 @@ const FileWidget = (props: Props) => {
           (val: unknown, i: number) => i !== index && typeof val === "string"
         );
       } else {
-        newFormData[props.name] = [null];
+        newFormData[props.name] = [];
       }
 
       return newFormData;
